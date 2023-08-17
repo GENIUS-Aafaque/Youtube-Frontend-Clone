@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+      <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg" alt="">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg" alt="">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+        <div class="tooltip">YouTube apps</div>
+      </div>
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg" alt="">
+        <div class="notifications-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="my-channel-icon" src="profile-pictures/my-channel.jpg" alt="">
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icons/home.svg" alt="">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg" alt="">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg" alt="">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg" alt="">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg" alt="">
+      <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg" alt="">
+      <div>Library</div>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <section class="videos-grid">
+      <!-- 1 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=WG5ikvJ2TKA" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-.webp" alt="">
+            <div class="video-time">
+              5:50
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+              <img class="profile-picture" src="profile-pictures/pfp-.jpeg" alt=""></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=WG5ikvJ2TKA" target="_blank">
+              <p class="video-title">Frontend web development - a complete overview</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+              <p class="video-author">SuperSimpleDev</p>
+            </a>
+            <p class="video-stats">196K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=Px7A7-HwQz0" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
+            <div class="video-time">
+              8:11
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@ObaydFox" target="_blank">
+              <img src="profile-pictures/pfp-2.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=Px7A7-HwQz0" target="_blank">
+              <p class="video-title">My First Time in Sweden!</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@ObaydFox" target="_blank">
+              <p class="video-author">Obayd Fox</p>
+            </a>
+            <p class="video-stats">96K views &#183; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=5M2RWtD4EzI" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="">
+            <div class="video-time">
+              30:17
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@AWellRestedDog" target="_blank">
+              <img src="profile-pictures/pfp-3.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=5M2RWtD4EzI" target="_blank">
+              <p class="video-title">This Is the Calculus They Won't Teach You</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@AWellRestedDog" target="_blank">
+              <p class="video-author">A Well-Rested Dog</p>
+            </a>
+            <p class="video-stats">2M views &#183; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=MMyHqqgbWUs" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="">
+            <div class="video-time">
+              14:27
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@FatihSeferagic" target="_blank">
+              <img src="profile-pictures/pfp-4.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=MMyHqqgbWUs" target="_blank">
+              <p class="video-title">Fatih Seferagic - Surat Rahman (NEW 2018)</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@FatihSeferagic" target="_blank">
+              <p class="video-author">Fatih Seferagic</p>
+            </a>
+            <p class="video-stats">15M views &#183; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=tSsNVUfyXHQ" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="">
+            <div class="video-time">
+              11:56
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@AliEhttisham" target="_blank">
+              <img src="profile-pictures/pfp-5.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=tSsNVUfyXHQ" target="_blank">
+              <p class="video-title">KASHMIR [2021] | VLOG | ali e.</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@AliEhttisham" target="_blank">
+              <p class="video-author">Ali E.</p>
+            </a>
+            <p class="video-stats">135K views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=s_8b5iq4Rvk" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="">
+            <div class="video-time">
+              1:21:29
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@CodeWithHarry" target="_blank">
+              <img src="profile-pictures/pfp-6.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=s_8b5iq4Rvk" target="_blank">
+              <p class="video-title">J.A.R.V.I.S - OpenAI + Python Powered AI Desktop Assistant</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@CodeWithHarry" target="_blank">
+              <p class="video-author">CodeWithHarry</p>
+            </a>
+            <p class="video-stats">308K views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=lRP6eHBY4lM&t=3s" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-7.webp" alt="">
+            <div class="video-time">
+              1:32:47
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@jeemastersbyunacademy" target="_blank">
+              <img src="profile-pictures/pfp-7.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=lRP6eHBY4lM&t=3s" target="_blank">
+              <p class="video-title">All Trends Of IOC || JEE Main 2023 || PMS Sir</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@jeemastersbyunacademy" target="_blank">
+              <p class="video-author">JEE Masters by Unacademy</p>
+            </a>
+            <p class="video-stats">4.6K views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=dgm4-3-Iv3s&t=12s" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp" alt="">
+            <div class="video-time">
+              5:50:23
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@blackpenredpen" target="_blank">
+              <img src="profile-pictures/pfp-8.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=dgm4-3-Iv3s&t=12s" target="_blank">
+              <p class="video-title">100 integrals (world record?)</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@blackpenredpen" target="_blank">
+              <p class="video-author">blackpenredpen</p>
+            </a>
+            <p class="video-stats">10M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=UrI2sOa4o74&t=28s" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-9.webp" alt="">
+            <div class="video-time">
+              24:15
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@AbdulMalikFareed" target="_blank">
+              <img src="profile-pictures/pfp-9.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=UrI2sOa4o74&t=28s" target="_blank">
+              <p class="video-title">Palestine Full Tour | Masjid al AQSA | Al Khalil, Hebron</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@AbdulMalikFareed" target="_blank">
+              <p class="video-author">Abdul Malik Fareed</p>
+            </a>
+            <p class="video-stats">934K views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=6L8yUY-doNc" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-10.webp" alt="">
+            <div class="video-time">
+              38:04
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@NileRed" target="_blank">
+              <img src="profile-pictures/pfp-10.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=6L8yUY-doNc" target="_blank">
+              <p class="video-title">Making ferrofluid from scratch</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@NileRed" target="_blank">
+              <p class="video-author">NileRed</p>
+            </a>
+            <p class="video-stats">12M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=K-Ek0gT8JPM" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-11.webp" alt="">
+            <div class="video-time">
+              56:27
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@TechWithTim" target="_blank">
+              <img src="profile-pictures/pfp-11.jpg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=K-Ek0gT8JPM" target="_blank">
+              <p class="video-title">Can I Make Brick Breaker in One Hour - Coding Challenge</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@TechWithTim" target="_blank">
+              <p class="video-author">Tech With Tim</p>
+            </a>
+            <p class="video-stats">52K views &#183; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="video-preview">
+        <a class="video-link" href="https://www.youtube.com/watch?v=XBu54nfzxAQ&t=53s" target="_blank">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-12.webp" alt="">
+            <div class="video-time">
+              12:58
+            </div>
+          </div>
+        </a>
+        <div class="video-data">
+          <div class="video-profile">
+            <a class="channel-link" href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+              <img src="profile-pictures/pfp-12.jpeg" alt="" class="profile-picture"></a>
+          </div>
+          <div class="video-info">
+            <a class="video-link" href="https://www.youtube.com/watch?v=XBu54nfzxAQ&t=53s" target="_blank">
+              <p class="video-title">What is Back-end</p>
+            </a>
+            <a class="channel-link" href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+              <p class="video-author">Super Simple Dev</p>
+            </a>
+            <p class="video-stats">1.1M views &#183; 1 years ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

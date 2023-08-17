@@ -1,0 +1,137 @@
+.videos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 18px;
+}
+
+@media (min-width: 1801px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .video-title {
+        font-size: 100px;
+    }
+
+    .video-author,
+    .video-stats {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .video-title {
+        font-size: 22px;
+    }
+
+    .video-author,
+    .video-stats {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 799px) {
+    .videos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video-title {
+        font-size: 14px;
+    }
+
+    .video-author,
+    .video-stats {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-title {
+        font-size: 14px;
+    }
+
+    .video-author,
+    .video-stats {
+        font-size: 12px;
+    }
+}
+
+.thumbnail-row {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+}
+
+.video-title {
+    color: rgb(15, 15, 15);
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-data {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-link {
+    text-decoration: none;
+    color: black;
+}
+
+.channel-link {
+    text-decoration: none;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 40px;
+}
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.video-stats {
+    margin-top: 4px;
+}
